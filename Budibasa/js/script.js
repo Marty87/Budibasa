@@ -1,54 +1,54 @@
-function include(scriptUrl) {
-    document.write('<script src="' + scriptUrl + '"></script>');
-}
+// function include(scriptUrl) {
+//     document.write('<script src="' + scriptUrl + '"></script>');
+// }
 
-function isIE() {
-    var myNav = navigator.userAgent.toLowerCase();
-    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-};
+ function isIE() {
+     var myNav = navigator.userAgent.toLowerCase();
+     return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+ };
 
 /* cookie.JS
  ========================================================*/
-include('js/jquery.cookie.js');
+// include('js/jquery.cookie.js');
 
 /* Easing library
  ========================================================*/
-include('js/jquery.easing.1.3.js');
+// include('js/jquery.easing.1.3.js');
 
 /* PointerEvents
  ========================================================*/
-;
-(function ($) {
-    if(isIE() && isIE() < 11){
-        include('js/pointer-events.js');
-        $('html').addClass('lt-ie11');
-        $(document).ready(function(){
-            PointerEventsPolyfill.initialize({});
-        });
-    }
-})(jQuery);
+// ;
+// (function ($) {
+//     if(isIE() && isIE() < 11){
+//         include('js/pointer-events.js');
+//         $('html').addClass('lt-ie11');
+//         $(document).ready(function(){
+//             PointerEventsPolyfill.initialize({});
+//         });
+//     }
+// })(jQuery);
 
 /* Stick up menus
  ========================================================*/
 ;
 (function ($) {
     var o = $('html');
-    if (o.hasClass('desktop')) {
-        include('js/tmstickup.js');
+    // if (o.hasClass('desktop')) {
+    //     include('js/tmstickup.js');
 
         $(document).ready(function () {
             $('#stuck_container').TMStickUp({})
         });
-    }
+    // }
 })(jQuery);
 
 /* ToTop
  ========================================================*/
 ;
 (function ($) {
-    var o = $('html');
-    if (o.hasClass('desktop')) {
-        include('js/jquery.ui.totop.js');
+    // var o = $('html');
+    // if (o.hasClass('desktop')) {
+    //     include('js/jquery.ui.totop.js');
 
         $(document).ready(function () {
             $().UItoTop({
@@ -56,87 +56,87 @@ include('js/jquery.easing.1.3.js');
                 containerClass: 'toTop fa fa-angle-up'
             });
         });
-    }
+    // }
 })(jQuery);
 
 /* EqualHeights
  ========================================================*/
-;
-(function ($) {
-    var o = $('[data-equal-group]');
-    if (o.length > 0) {
-        include('js/jquery.equalheights.js');
-    }
-})(jQuery);
+// ;
+// (function ($) {
+//     var o = $('[data-equal-group]');
+//     if (o.length > 0) {
+//         include('js/jquery.equalheights.js');
+//     }
+// })(jQuery);
 
 /* Copyright Year
  ========================================================*/
-;
-(function ($) {
-    var currentYear = (new Date).getFullYear();
-    $(document).ready(function () {
-        $("#copyright-year").text((new Date).getFullYear());
-    });
-})(jQuery);
+// ;
+// (function ($) {
+//     var currentYear = (new Date).getFullYear();
+//     $(document).ready(function () {
+//         $("#copyright-year").text((new Date).getFullYear());
+//     });
+// })(jQuery);
 
 
 /* Superfish menus
  ========================================================*/
-;
-(function ($) {
-    include('js/superfish.js');
-})(jQuery);
+// ;
+// (function ($) {
+//     include('js/superfish.js');
+// })(jQuery);
 
 /* Navbar
  ========================================================*/
-;
-(function ($) {
-    include('js/jquery.rd-navbar.js');
-})(jQuery);
+// ;
+// (function ($) {
+//     include('js/jquery.rd-navbar.js');
+// })(jQuery);
 
 
 /* Google Map
  ========================================================*/
-;
-(function ($) {
-    var o = document.getElementById("google-map");
-    if (o) {
-        include('//maps.google.com/maps/api/js?sensor=false');
-        include('js/jquery.rd-google-map.js');
+// ;
+// (function ($) {
+//     var o = document.getElementById("google-map");
+//     if (o) {
+//         include('//maps.google.com/maps/api/js?sensor=false');
+//         include('js/jquery.rd-google-map.js');
 
-        $(document).ready(function () {
-            var o = $('#google-map');
-            if (o.length > 0) {
-                o.googleMap();
-            }
-        });
-    }
-})
-(jQuery);
+//         $(document).ready(function () {
+//             var o = $('#google-map');
+//             if (o.length > 0) {
+//                 o.googleMap();
+//             }
+//         });
+//     }
+// })
+// (jQuery);
 
 /* WOW
  ========================================================*/
-;
-(function ($) {
-    var o = $('html');
+// ;
+// (function ($) {
+//     var o = $('html');
 
-    if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1 ) || (isIE() && isIE() > 9)) {
-        if (o.hasClass('desktop')) {
-            include('js/wow.js');
+//     if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1 ) || (isIE() && isIE() > 9)) {
+//         if (o.hasClass('desktop')) {
+//             include('js/wow.js');
 
-            $(document).ready(function () {
-                new WOW().init();
-            });
-        }
-    }
-})(jQuery);
+//             $(document).ready(function () {
+//                 new WOW().init();
+//             });
+//         }
+//     }
+// })(jQuery);
 
 /* Mailform
 =============================================*/
-;(function ($) {
-    include('js/mailform/jquery.form.min.js');
-    include('js/mailform/jquery.rd-mailform.min.js');
-})(jQuery);
+// ;(function ($) {
+//     include('js/mailform/jquery.form.min.js');
+//     include('js/mailform/jquery.rd-mailform.min.js');
+// })(jQuery);
 
 /* Orientation tablet fix
  ========================================================*/
@@ -189,21 +189,21 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 
 /* Search.js
  ========================================================*/
-;
-(function ($) {
-    include('js/TMSearch.js');
-})(jQuery);
+// ;
+// (function ($) {
+//     include('js/TMSearch.js');
+// })(jQuery);
 
 /* Camera
 ========================================================*/
 ;(function ($) {
 var o = $('#camera');
-    if (o.length > 0) {
-        if (!(isIE() && (isIE() > 9))) {
-            include('js/jquery.mobile.customized.min.js');
-        }
+//     if (o.length > 0) {
+//         if (!(isIE() && (isIE() > 9))) {
+//             include('js/jquery.mobile.customized.min.js');
+//         }
 
-        include('js/camera.js');
+        // include('js/camera.js');
 
         $(document).ready(function () {
             o.camera({
@@ -221,7 +221,7 @@ var o = $('#camera');
                 fx: 'simpleFade'
             })
         });
-    }
+    // }
 })(jQuery);
 
 
@@ -230,8 +230,8 @@ var o = $('#camera');
 ========================================================*/
 ;(function ($) {
     var o = $('.owl-carousel');
-    if (o.length > 0) {
-        include('js/owl.carousel.min.js');
+    // if (o.length > 0) {
+        // include('js/owl.carousel.min.js');
         $(document).ready(function () {
             o.owlCarousel({
                 margin: 30,
@@ -251,13 +251,13 @@ var o = $('#camera');
                 }
             });
         });
-    }
+    // }
 })(jQuery);
 
 ;(function ($) {
     var o = $('.owl-carousel-2');
-    if (o.length > 0) {
-        include('js/owl.carousel.min.js');
+    // if (o.length > 0) {
+    //     include('js/owl.carousel.min.js');
         $(document).ready(function () {
             o.owlCarousel({
                 margin: 30,
@@ -278,12 +278,12 @@ var o = $('#camera');
                 }
             });
         });
-    }
+    // }
 })(jQuery);
 
 /* Owl Carousel Thumbnail
 ========================================================*/
-include('js/owl.carousel2.thumbs.js');
+// include('js/owl.carousel2.thumbs.js');
 
 
 /* Fittext
@@ -295,7 +295,7 @@ include('js/owl.carousel2.thumbs.js');
 
 /* Scrollbar
  ========================================================*/
-include('js/jquery.scrollbar.js');
+// include('js/jquery.scrollbar.js');
 jQuery(document).ready(function(){
     jQuery('.scrollbar-inner').scrollbar();
 });
@@ -320,19 +320,19 @@ $(function(){
 ;
 (function ($) {
     var o = $('.resp-tabs');
-    if (o.length > 0) {
-        include('js/jquery.responsive.tabs.js');
+    // if (o.length > 0) {
+    //     include('js/jquery.responsive.tabs.js');
 
         $(document).ready(function () {
             o.easyResponsiveTabs();
         });
-    }
+    // }
 })(jQuery);
 
 /* Parallax
 =============================================*/
-;(function ($) {
-    include('js/jquery.rd-parallax.js');
-})(jQuery);
+// ;(function ($) {
+//     include('js/jquery.rd-parallax.js');
+// })(jQuery);
 
 
