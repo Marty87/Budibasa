@@ -1,0 +1,74 @@
+/*=================       Tabs     ======================*/
+
+.resp-tabs {
+
+  // margin-top: 50px;
+
+  // h3 {
+  //   color:$secondary2;
+  //   font-family: $font-book;
+  //   margin-top: 45px;
+  // }
+
+  .simple-box {
+    margin-top: 0;
+  }
+
+}
+
+.resp-tabs-list {
+  margin-top: 25px;
+  text-align: center;
+  border-bottom: 1px solid #edd7d0;
+
+  li {
+    padding-bottom: 10px;
+    width: 33%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: $font-book;
+    font-size: 14px;
+    color:#c9b5af;
+    // @include transition(0.3s);
+
+   &:hover,
+   &.resp-tab-active {
+      // @include transition(0.3s);
+      font-size: 16px;
+      color:$secondary2;
+
+        &:before {
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: $secondary2;
+        }
+    }
+  }
+}
+
+.resp-accordion {
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+}
+.resp-tab-content-active {
+  display: block;
+}
+
+// @media (max-width: 767px) {
+//   .resp-accordion {
+//     display: block;
+//   }
+
+//   .resp-tabs-list {
+//     display: none;
+//   }
+// }
