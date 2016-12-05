@@ -336,3 +336,15 @@ $(function(){
 // })(jQuery);
 
 
+/* News slider
+=============================================*/
+(function($) {
+    $(window).load(function() {
+        $('#kiss-slider').kissSlider({
+            prevSelector: '.prev-news',
+            nextSelector: '.next-news',
+        });
+    });
+})(jQuery);
+
+

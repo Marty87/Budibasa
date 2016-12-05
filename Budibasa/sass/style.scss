@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
     font-size: 50px;
-
 }
 
 h2{
@@ -61,7 +60,6 @@ h5 {
 h6 {
     font-size: 14px;
     font-weight: 300;
-
 }
 
 p, .marked-list, .list{
@@ -159,91 +157,13 @@ strong {
                        Main Layout
 =========================================================*/
 
-* + h1 {}
-* + h2 {}
 * + h3 {margin-top: 45px;}
-* + h4 {}
-* + h5 {}
-* + h6 {}
-* + p {}
-* + dl {}+
-* + hr {}
-* + table {}
-* + cite {}
-* + .btn {}
-* + .btn.mode_1 {}
-* + .map {}
-* + .contact-form {}
-* + .subtitle {}
 * + .offset-1 { margin-top: 30px;}
 * + .offset-2 { margin-top: 65px;}
 * + strong.offset-3 { margin-top: 35px;}
 strong.offset-3 + p{ margin-top: 12px;}
-
-h1 + p {}
-
-h2 + * {}
-h2 + p {}
-h2 + .row {}
-h2 + .owl-carousel {}
-h2 + .owl-carousel-03 {}
-h2 + .contact-form {}
-h2 + .resp-tabs {}
-h2 + .img {}
-h2 + .accordion {}
-h3 + p {}
-h3 + ul {}
-h3 + .row {}
-h4 + p {}
-h6 + p {}
-
-.offset1 {}
 .offset-4 {margin-top: 20px;}
-
 .subtitle + .row {}
-
-* + time {}
-h5 + time {}
-h5 + p {}
-time + p {}
-time + h4 {}
-
-dd + dt {}
-
-dt + dd {}
-
-dl + a {}
-
-address + dl {}
-
-hr + * {}
-
-.icon + * {}
-
-.row + .row {}
-
-.row + .btn-wr {}
-
-.img + * {}
-
-.img + h5 {}
-
-.img + h3 {}
-
-.img + .row {}
-
-p + .row {}
-
-.row + .offset4 {}
-
-.row + .offset6 {}
-
-blockquote + p {}
-
-cite + p {}
-
-
-.img + p {}
 
 /*=======================================================
                         Components
@@ -287,11 +207,10 @@ cite + p {}
 .brand {
 
     &__name{
-        // overflow: hidden;
+
 
         &--link {
             display: block;
-            // background: url('../images/Head-logo.png') 0 0 no-repeat;
         }
     }
 }
@@ -345,16 +264,12 @@ cite + p {}
 }
 
 .news {
-    // padding:0 0 50px 28px;
     height: 372px;
-    // max-height: 372px;
-    // overflow-y: auto;
 }
 
 .news > div {
      max-height: 370px;
      overflow: auto;
-     // position: relative;
 }
 
 .news-inner {
@@ -476,7 +391,7 @@ cite + p {}
     float: right;
     width: 100%;
     text-align: right;
-    padding-bottom: 25px;
+    margin-top: 25px;
 
    > a {
        font-family: $font-medium;
@@ -555,6 +470,7 @@ cite + p {}
         background: url('../images/social_03.png') 0 0 no-repeat;
     }
 }
+
   /*==================  Breadcrumbs  ======================*/
 
 .breadcrumbs {
@@ -566,11 +482,11 @@ cite + p {}
         margin-right: 1px;
 
         a {
-             color: $secondary2;
-             font-size: 12px;
-             font-family: $font-book;
+            color: $secondary2;
+            font-size: 12px;
+            font-family: $font-book;
 
-               &:hover {
+            &:hover {
                 text-decoration: underline;
             }
        }
@@ -610,6 +526,7 @@ cite + p {}
         display: inline-block;
         font-family: $font-normal;
         color:$secondary2;
+
         span {
             padding: 0 0 0 5px;
             font-size: 24px;
@@ -677,7 +594,7 @@ cite + p {}
                      }
                 }
             }
-       }
+        }
     }
 }
 
@@ -699,6 +616,7 @@ cite + p {}
     li {
         display: inline-block;
     }
+
     li + li {
         margin-left: 23px;
     }
@@ -955,7 +873,6 @@ input[type="radio"]:checked + label::before {
 .standard-table td {
     padding: 11px 10px 11px 16px;
     border-bottom: 1px solid #edd7d0;
-    // color:#928187;
 }
 
 .standard-table .thead {
@@ -1365,7 +1282,7 @@ input[type="radio"]:checked + label::before {
 
     &__03 {
         padding-top: 24px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
 
     &__04 {
@@ -1441,11 +1358,9 @@ input[type="radio"]:checked + label::before {
         margin-top: 17px;
 
         li {
-
-            padding: 8px 0;
+          padding: 8px 0;
 
             a {
-
                font-weight: 300;
                font-size: 16px;
                line-height: 20px;

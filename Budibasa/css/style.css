@@ -388,7 +388,7 @@ strong.offset-3 + p {
   float: right;
   width: 100%;
   text-align: right;
-  padding-bottom: 25px; }
+  margin-top: 25px; }
   .all-news > a {
     font-family: "Fedra-Sans-Pro-Medium", sans-serif;
     text-transform: uppercase;
@@ -3101,7 +3101,7 @@ input[type="text"].search-form_input:-moz-placeholder {
   padding-bottom: 50px; }
 .well__03 {
   padding-top: 24px;
-  padding-bottom: 20px; }
+  padding-bottom: 25px; }
 .well__04 {
   padding-top: 70px;
   padding-bottom: 60px; }
