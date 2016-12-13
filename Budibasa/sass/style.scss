@@ -229,7 +229,18 @@ strong.offset-3 + p{ margin-top: 12px;}
 
     img {
         // width: 155px;
+        @include transform(scale(1));
+        @include transition(all 1s ease-out);
     }
+
+    &:hover  img {
+        @include transform(scale(1.1));
+        @include transition(all 1s ease-out);
+    }
+}
+
+.brand_overlay {
+    display: block;
 }
 
 /*==================     Texts     ======================*/
@@ -932,16 +943,28 @@ input[type="radio"]:checked + label::before {
 }
 
 .collection-box {
+    cursor: pointer;
     text-align: center;
     position: relative;
     padding: 12px 0;
     @include transition(0.5s);
 
-    &:hover {
-        cursor: pointer;
-        @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.35));
-        @include transition(0.3s);
+    img {
+        @include transition(all 1s ease-out);
     }
+
+    &:hover  img {
+        @include transform(scale(1.1));
+        @include transition(all 1s ease-out);
+    }
+
+    // &:hover {
+    //     cursor: pointer;
+    //     @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.35));
+    //     @include transition(0.3s);
+
+
+    // }
 }
 
 .collection-box-info {
