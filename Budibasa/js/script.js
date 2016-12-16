@@ -53,7 +53,7 @@
         $(document).ready(function () {
             $().UItoTop({
                 easingType: 'easeOutQuart',
-                containerClass: 'toTop fa fa-angle-up'
+                containerClass: 'toTop'
             });
         });
     // }

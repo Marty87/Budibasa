@@ -189,8 +189,9 @@
 
 .owl-controls {
   position: relative;
-  width: 234px;
-  height: 54px;
+  // width: 234px;
+  width: 45%;
+  min-height: 54px;
   margin: 0 auto;
 }
 
@@ -206,13 +207,13 @@
     height: 22px;
     z-index: 999;
     top: 16px;
+    top: 35%;
     @include transition(0.5s);
 
     &:hover {
       @include transform(scale(1.2));
       @include transition(0.3s);
     }
-
   }
 
   .owl-prev {
@@ -233,11 +234,15 @@
 
 .owl-dots{
   position: relative;
-  top: 25%;
-  width: 120px;
-  height: 50%;
+  // left: 0;
+  // right: 0;
+  // top: 25%;
+  // width: 120px;
+  width: 55%;
+  height: 100%;
   margin:0 auto;
   text-align: center;
+  padding: 17px 0;
 
 
   .owl-dot{
@@ -249,6 +254,9 @@
     border: 2px solid #d2b6b0;
     @include border-radius(50%);
     vertical-align: middle;
+    // margin-right: 45px;
+    margin: 0 14px;
+
 
 
     &:hover, &.active{
@@ -257,9 +265,10 @@
     }
   }
 
-  .owl-dot + .owl-dot{
-    margin-left: 45px;
-  }
+   .owl-dot + .owl-dot{
+     // margin-left: 45px;
+     // margin-left: 37%;
+   }
 }
 
 

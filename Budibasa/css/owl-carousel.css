@@ -170,8 +170,8 @@
 
 .owl-controls {
   position: relative;
-  width: 234px;
-  height: 54px;
+  width: 45%;
+  min-height: 54px;
   margin: 0 auto; }
 
 .owl-nav {
@@ -185,6 +185,7 @@
     height: 22px;
     z-index: 999;
     top: 16px;
+    top: 35%;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -211,11 +212,11 @@
 
 .owl-dots {
   position: relative;
-  top: 25%;
-  width: 120px;
-  height: 50%;
+  width: 55%;
+  height: 100%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding: 17px 0; }
   .owl-dots .owl-dot {
     display: inline-block;
     width: 9px;
@@ -225,15 +226,14 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin: 0 14px; }
     .owl-dots .owl-dot:hover, .owl-dots .owl-dot.active {
       background-color: #d2b6b0;
       -moz-transition: 0.3s;
       -o-transition: 0.3s;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-  .owl-dots .owl-dot + .owl-dot {
-    margin-left: 45px; }
 
 .type-carousel .item {
   max-height: 395px;

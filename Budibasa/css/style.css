@@ -1337,7 +1337,7 @@ input[type="radio"]:checked + label::before {
   width: 45px;
   height: 45px;
   background: #9a8288;
-  background: url("../images/strelka.png") 0 0 no-repeat;
+  background: url("../images/strelka2.png") 0 0 no-repeat;
   border-radius: 50%;
   position: fixed;
   right: 40px;
@@ -2022,8 +2022,8 @@ input[type="text"].search-form_input:-moz-placeholder {
 
 .owl-controls {
   position: relative;
-  width: 234px;
-  height: 54px;
+  width: 45%;
+  min-height: 54px;
   margin: 0 auto; }
 
 .owl-nav {
@@ -2037,6 +2037,7 @@ input[type="text"].search-form_input:-moz-placeholder {
     height: 22px;
     z-index: 999;
     top: 16px;
+    top: 35%;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -2063,11 +2064,11 @@ input[type="text"].search-form_input:-moz-placeholder {
 
 .owl-dots {
   position: relative;
-  top: 25%;
-  width: 120px;
-  height: 50%;
+  width: 55%;
+  height: 100%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding: 17px 0; }
   .owl-dots .owl-dot {
     display: inline-block;
     width: 9px;
@@ -2077,15 +2078,14 @@ input[type="text"].search-form_input:-moz-placeholder {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin: 0 14px; }
     .owl-dots .owl-dot:hover, .owl-dots .owl-dot.active {
       background-color: #d2b6b0;
       -moz-transition: 0.3s;
       -o-transition: 0.3s;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-  .owl-dots .owl-dot + .owl-dot {
-    margin-left: 45px; }
 
 .type-carousel .item {
   max-height: 395px;
