@@ -37,7 +37,7 @@
         createDOM: function () {
             var nav = this;
 
-            $('body')
+            $('.stuck_inner')
                 .append($('<div/>', {
                     'class': settings.cntClass
                 }).append(nav.createNavDOM()))

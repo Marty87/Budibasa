@@ -44,9 +44,6 @@
 			width: 77%;
 		}
 	}
-
-
-
 }
 
 
@@ -121,7 +118,9 @@
 		}
 	}
 
-
+	.lang-menu-icon {
+		right: 15%;
+	}
 }
 
 
@@ -226,6 +225,19 @@
 	 	bottom: 28px;
 	 }
 
+	.stuck-menu {
+		right: -15px;
+	}
+
+	.lang-menu-icon {
+		right: 11%;
+	}
+
+	.isStuck .rd-mobilemenu,
+	.isStuck .rd-mobilepanel {
+		left: 0;
+	}
+
 }
 
 @media only screen and (max-width : 710px) {
@@ -307,6 +319,21 @@
 	.owl-dots .owl-dot {
 		margin: 0 9px;
 	}
+
+	.lang-menu-icon {
+		right: 2%;
+	}
+
+	.isStuck .rd-mobilepanel_toggle {
+		left: 2%;
+	}
+
+	.stuck-menu,
+	.isStuck .active .rd-mobilemenu_ul {
+		width: 200px;
+	}
+
+
 }
 
 @media only screen and (max-width : 440px) {

@@ -173,7 +173,11 @@ strong.offset-3 + p{ margin-top: 12px;}
 .top_main {
     position: relative;
     padding: 20px 0;
+    @include transition(0.3s);
 }
+
+
+
 
 /*==================     Lang     ======================*/
 .lang {
@@ -201,6 +205,96 @@ strong.offset-3 + p{ margin-top: 12px;}
     a + a {
         margin-left: 2px;
     }
+}
+
+/*==================  Stuck Lang Menu     ======================*/
+
+.lang-menu-icon {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 10%;
+    width: 30px;
+    height: 30px;
+    background: url('../images/Head-icon-lang.png') 0 0 no-repeat;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.stuck-menu {
+    display: none;
+    @include opacity(0);
+    width: 240px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #FFF;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 10000000px;
+    padding: 20px 0;
+    @include transform(translateX(240px));
+    @include transition(0.3s ease);
+    @include box-shadow(0 0 5px rgba(1, 1, 1, 0.38));
+}
+
+.stuck-menu-item {
+    vertical-align: middle;
+    font: 14px/1.2 "Fedra-Sans-Pro-Book", sans-serif;
+
+    .icon-lang {
+        vertical-align: middle;
+        display: inline-block;
+        @include border-radius(50%);
+    }
+
+
+    a {
+
+      @include transition(0.3s);
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #9a8288;
+      display: block;
+      padding: 14px 25px 16px;
+    }
+
+    &:hover {
+
+        a {
+            @include transition(0.3s);
+            color: rgb(115, 93, 98);
+        }
+    }
+}
+
+.active-menu {
+    @include opacity(1);
+    @include transform(translateX(0px));
+    @include transition(0.3s ease);
+}
+
+.icon-lang {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    @include border-radius(50%);
+}
+
+.lang1 {
+    background: url('../images/russ-icon.png') center center no-repeat;
+}
+
+.lang2 {
+    background: url('../images/eng-icon.png') center center no-repeat;
+}
+
+.lang3 {
+    background: url('../images/deutch-icon.png') center center no-repeat;
 }
 
 /*==================     Brand     ======================*/
@@ -1450,3 +1544,4 @@ input[type="radio"]:checked + label::before {
 
 
 @import "_media.scss";
+

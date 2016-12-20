@@ -34,57 +34,62 @@
                             HEADER
   =========================================================-->
   <header class="header">
-    <div class="container">
-      <div class="top_main">
-        <div class="header__brand brand">
-          <div class="brand__name">
-            <a class="brand__name--link"  href="#"><img src="images/Head-logo.png" alt="img"></a>
+    <div id="stuck_container" class="stuck_container">
+      <div class="container stuck_inner">
+        <div class="top_main">
+            <div class="header__brand brand">
+              <div class="brand__name">
+                <a class="brand__name--link"  href="#"><img src="images/Head-logo.png" alt="img"></a>
+              </div>
+            </div>
+            <div class="lang">
+              <a href="#" class="lang__link active">Ру</a>
+              <a href="#" class="lang__link">En</a>
+            </div>
+            <!-- Stuck Lang-Menu -->
+            <div class="lang-menu-icon"></div>
+              <ul class="stuck-menu">
+                <li class="stuck-menu-item"><a href="#"><span class='icon-lang lang1'></span>Deutsch</a></li>
+                <li class="stuck-menu-item"><a href="#"><span class='icon-lang lang2'></span>Русский</a></li>
+                <li class="stuck-menu-item"><a href="#"><span class='icon-lang lang3'></span>English</a></li>
+              </ul>
+            <!-- //Stuck Lang-Menu -->
           </div>
         </div>
-        <div class="lang">
-          <a href="#" class="lang__link active">Ру</a>
-          <a href="#" class="lang__link">En</a>
+      <nav class="header__nav nav">
+        <ul class="sf-menu" data-type="navbar">
+          <li class="sf-menu__item sf-menu__active">
+            <a href="index.html" class="sf-menu__item--link sf-menu__active--link">О компании</a>
+          </li>
+          <li class="sf-menu__item">
+            <a href="index-1.html" class="sf-menu__item--link">Бренды</a>
+          </li>
+          <li class="sf-menu__item">
+            <a href="index-2.html" class="sf-menu__item--link">Новости</a>
+          </li>
+          <li class="sf-menu__item">
+            <a href="index-3.html" class="sf-menu__item--link">Партнерам</a>
+          </li>
+          <li class="sf-menu__item">
+            <a href="index-4.html" class="sf-menu__item--link">Покупателям</a>
+          </li>
+          <li class="sf-menu__item">
+            <a href="index-5.html" class="sf-menu__item--link">Контакты</a>
+          </li>
+        </ul>
+        <div class="search_wrap">
+          <a class="search-form_toggle" href="#"></a>
+          <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+            <label class="search-form_label">
+              <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="Поиск"/>
+              <span class="search-form_liveout"></span>
+            </label>
+            <button class="search-form_submit fa-search" type="submit"></button>
+          </form>
         </div>
-      </div>
+      </nav>
     </div>
-    <div id="stuck_container" class="stuck_container">
-      <div class="container">
-        <nav class="header__nav nav">
-            <ul class="sf-menu" data-type="navbar">
-              <li class="sf-menu__item sf-menu__active">
-                <a href="index.html" class="sf-menu__item--link sf-menu__active--link">О компании</a>
-              </li>
-              <li class="sf-menu__item">
-                <a href="index-1.html" class="sf-menu__item--link">Бренды</a>
-              </li>
-              <li class="sf-menu__item">
-                <a href="index-2.html" class="sf-menu__item--link">Новости</a>
-              </li>
-              <li class="sf-menu__item">
-                <a href="index-3.html" class="sf-menu__item--link">Партнерам</a>
-              </li>
-              <li class="sf-menu__item">
-                <a href="index-4.html" class="sf-menu__item--link">Покупателям</a>
-              </li>
-              <li class="sf-menu__item">
-                <a href="index-5.html" class="sf-menu__item--link">Контакты</a>
-              </li>
-            </ul>
-            <div class="search_wrap">
-              <a class="search-form_toggle" href="#"></a>
-              <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
-                <label class="search-form_label">
-                  <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="Поиск"/>
-                  <span class="search-form_liveout"></span>
-                </label>
-                <button class="search-form_submit fa-search" type="submit"></button>
-              </form>
-            </div>
-        </nav>
-      </div>
-    </div>
-
-  </header>
+    </header>
   <!--========================================================
                             CONTENT
   =========================================================-->

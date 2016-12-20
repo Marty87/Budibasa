@@ -396,13 +396,13 @@ $rd-menu-width: 240px;
 }
 
 @media (max-width: 767px) {
-  body {
-    padding-top: $rd-mobilepanel-height;
-  }
+  // body {
+  //   padding-top: $rd-mobilepanel-height;
+  // }
 
-  .rd-mobilemenu, .rd-mobilepanel {
-    display: block;
-  }
+  // .rd-mobilemenu, .rd-mobilepanel {
+  //   display: block;
+  // }
 }
 
 @media (max-width: 359px) {

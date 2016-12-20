@@ -348,3 +348,36 @@ $(function(){
 })(jQuery);
 
 
+
+/* stuck Menu
+=============================================*/
+
+
+
+   // $('.lang-menu-icon').click(function() {
+
+   //  $('.stuck-menu').toggleClass('active');
+
+   //  });
+
+// $(document).ready(main);
+
+
+  $(document).ready(function () {
+        $('.lang-menu-icon').click(function(){
+        $('.stuck-menu').toggleClass("active-menu");
+    });
+});
+
+// $('.lang-menu-icon').click(function(){
+//   $('.stuck-menu').toggleClass("expand");
+// });
+
+
+//  $(".sandwich").on('click', function() {
+//         $('.top_header__menu').toggle(200);
+//         $(this).toggleClass('active');
+// });
+
+
+
