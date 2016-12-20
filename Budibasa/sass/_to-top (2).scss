@@ -1,0 +1,35 @@
+/*==================     ToTop     ======================*/
+.toTop {
+  width: 45px;
+  height: 45px;
+  // font-size: 24px;
+  // line-height: 46px;
+  // color: #fff;
+  background: $secondary;
+  background:url('../images/strelka2.png') 0 0 no-repeat;
+  border-radius: 50%;
+  // @include box-shadow(4px 4px 8px 0 rgba(#000, .4));
+
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  z-index: 20;
+
+  // &:hover {
+  //   color: #fff;
+  //   background: darken($secondary,15%);
+  //   text-decoration: none;
+  // }
+}
+
+.mobile .toTop,
+.tablet .toTop{
+	display: none!important;
+}
+
+
