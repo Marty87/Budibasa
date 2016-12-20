@@ -22,9 +22,9 @@
 		}
 	}
 
-	.brand-box {
-	 padding: 5px 0 55px;
-	}
+	// .brand-box {
+	//  padding: 5px 0 55px;
+	// }
 
 	.brand-box-overlay img {
 		height: 105px;
@@ -295,6 +295,18 @@
 	.mfControls {
 		text-align: center;
 	}
+
+	.owl-nav .owl-prev {
+		left: -35px;
+	}
+
+	.owl-nav .owl-next {
+		right: -35px;
+	}
+
+	.owl-dots .owl-dot {
+		margin: 0 9px;
+	}
 }
 
 @media only screen and (max-width : 440px) {
@@ -342,13 +354,29 @@
 	.brand-box {
 		padding: 72px 0 55px;
 	}
+
+	// .owl-nav .owl-prev {
+	// 	left: 0px;
+	// }
+
+	// .owl-nav .owl-next {
+	// 	right: 0px;
+	// }
+
+
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
-	/**/
+	.owl-nav .owl-prev {
+		left: -15px;
+	}
+
+	.owl-nav .owl-next {
+		right: -15px;
+	}
 }
 
 
