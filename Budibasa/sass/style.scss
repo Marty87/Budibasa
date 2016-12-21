@@ -1007,6 +1007,7 @@ input[type="radio"]:checked + label::before {
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    min-height: 320px;
 }
 
 /*==================    Buttons    ======================*/
@@ -1098,15 +1099,16 @@ input[type="radio"]:checked + label::before {
 }
 
 .box-2 {
-    color:#7f6666;
+    // color:#7f6666;
+    color: #FFF;
     font-size: 17px;
     line-height: 26px;
     font-family: $font-decor;
     padding: 20px 0;
-    background: #FFF;
+    // background: #FFF;
 
     position: absolute;
-    width: 99%;
+    // width: 99%;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -1330,7 +1332,7 @@ input[type="radio"]:checked + label::before {
 .brand-slogan {
     position: absolute;
     top: 140px;
-    right: 0;
+    right: 25px;
     text-align: center;
 
     span {
@@ -1538,7 +1540,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .parallax {
-    min-height: 600px;
+    min-height: 500px;
     padding: 10px 0;
 }
 

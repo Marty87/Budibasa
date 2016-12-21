@@ -914,7 +914,8 @@ input[type="radio"]:checked + label::before {
   background: url("../images/decor-back2.jpg") 0 0 no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 320px; }
 
 /*==================    Buttons    ======================*/
 .btn:hover {
@@ -985,14 +986,12 @@ input[type="radio"]:checked + label::before {
   background-size: cover; }
 
 .box-2 {
-  color: #7f6666;
+  color: #FFF;
   font-size: 17px;
   line-height: 26px;
   font-family: "JandaScrapgirlDots", sans-serif;
   padding: 20px 0;
-  background: #FFF;
   position: absolute;
-  width: 99%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1174,7 +1173,7 @@ input[type="radio"]:checked + label::before {
 .brand-slogan {
   position: absolute;
   top: 140px;
-  right: 0;
+  right: 25px;
   text-align: center; }
   .brand-slogan span {
     display: block;
@@ -3404,7 +3403,7 @@ input[type="text"].search-form_input:-moz-placeholder {
   color: #fff !important; }
 
 .parallax {
-  min-height: 600px;
+  min-height: 500px;
   padding: 10px 0; }
 
 .clearfix {
