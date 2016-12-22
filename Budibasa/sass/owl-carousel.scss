@@ -231,7 +231,6 @@
   .owl-prev + .owl-next {
     margin-left: 0;
   }
-
 }
 
 .owl-dots{
@@ -259,9 +258,7 @@
     // margin-right: 45px;
     margin: 0 14px;
 
-
-
-    &:hover, &.active{
+  &:hover, &.active{
       background-color: #d2b6b0;
       @include transition(0.3s);
     }
@@ -273,13 +270,11 @@
    }
 }
 
-
 .type-carousel .item {
   max-height: 395px;
   overflow: hidden;
   border: 1px solid #dedede;
 }
-
 
 .owl-gallery {
   position: relative;
@@ -289,10 +284,11 @@
   }
 
   .owl-controls {
-    width: 79%;
+    width: 77%;
     position: absolute;
     top: 43%;
     right: 0;
+    right: 3%;
   }
 
   .owl-nav {
@@ -303,6 +299,7 @@
   .owl-next {
     width: 17px;
     height: 30px;
+    top: 20%;
   }
 
    .owl-prev {
@@ -315,12 +312,21 @@
     background: url('../images/next-gallery.png') 0 0 no-repeat;
   }
 
+  // .owl-item {
+  //   margin: 0 !important;
+  //   max-width: 540px !important;
+  // }
+
   .item {
     max-height: 540px;
-    border: none;
+    max-width: 540px;
+    border: 1px solid #dedede;
+    // border: 1px solid #dedede;
+    margin: 0 25% 0 0 !important;
+
+
 
     img {
-      border: 1px solid #dedede;
       width: auto !important;
     }
   }
@@ -350,7 +356,6 @@
       z-index: 999;
       display: block;
 }
-
 
 .carousel_box {
   position: relative;
@@ -389,7 +394,6 @@
     background: url('../images/owl-carousel-next.png') 0 0 no-repeat;
   }
 }
-
 
 .owl-carousel-2 .item {
   border: none;

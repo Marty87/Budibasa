@@ -2269,14 +2269,16 @@ input[type="text"].search-form_input:-moz-placeholder {
   .owl-gallery .owl-dots {
     display: none !important; }
   .owl-gallery .owl-controls {
-    width: 79%;
+    width: 77%;
     position: absolute;
     top: 43%;
-    right: 0; }
+    right: 0;
+    right: 3%; }
   .owl-gallery .owl-prev,
   .owl-gallery .owl-next {
     width: 17px;
-    height: 30px; }
+    height: 30px;
+    top: 20%; }
   .owl-gallery .owl-prev {
     left: 15px;
     background: url("../images/prev-gallery.png") 0 0 no-repeat; }
@@ -2285,9 +2287,10 @@ input[type="text"].search-form_input:-moz-placeholder {
     background: url("../images/next-gallery.png") 0 0 no-repeat; }
   .owl-gallery .item {
     max-height: 540px;
-    border: none; }
+    max-width: 540px;
+    border: 1px solid #dedede;
+    margin: 0 25% 0 0 !important; }
     .owl-gallery .item img {
-      border: 1px solid #dedede;
       width: auto !important; }
 
 .carousel_box .carousel-title {
@@ -3444,7 +3447,8 @@ input[type="text"].search-form_input:-moz-placeholder {
     margin-top: 5px; }
 
   .owl-gallery .owl-controls {
-    width: 77%; } }
+    width: 74%;
+    right: 2%; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .sf-menu > li + li {
@@ -3488,7 +3492,11 @@ input[type="text"].search-form_input:-moz-placeholder {
     right: -17px; }
 
   .lang-menu-icon {
-    right: 15%; } }
+    right: 15%; }
+
+  .owl-gallery .owl-controls {
+    right: 6%;
+    width: 74%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .search_wrap {
@@ -3587,10 +3595,18 @@ input[type="text"].search-form_input:-moz-placeholder {
     margin-right: 20px; }
 
   .owl-gallery .owl-controls {
-    width: 100%; }
+    width: 100%;
+    right: 0%; }
 
   .owl-carousel-2 .item {
-    padding: 12px; } }
+    padding: 12px; }
+
+  .owl-gallery .item {
+    margin: 0 !important;
+    text-align: center;
+    max-width: 100%; }
+    .owl-gallery .item img {
+      display: inline-block; } }
 @media only screen and (max-width: 540px) {
   .share {
     width: 100%; } }

@@ -244,14 +244,16 @@
   .owl-gallery .owl-dots {
     display: none !important; }
   .owl-gallery .owl-controls {
-    width: 79%;
+    width: 77%;
     position: absolute;
     top: 43%;
-    right: 0; }
+    right: 0;
+    right: 3%; }
   .owl-gallery .owl-prev,
   .owl-gallery .owl-next {
     width: 17px;
-    height: 30px; }
+    height: 30px;
+    top: 20%; }
   .owl-gallery .owl-prev {
     left: 15px;
     background: url("../images/prev-gallery.png") 0 0 no-repeat; }
@@ -260,9 +262,10 @@
     background: url("../images/next-gallery.png") 0 0 no-repeat; }
   .owl-gallery .item {
     max-height: 540px;
-    border: none; }
+    max-width: 540px;
+    border: 1px solid #dedede;
+    margin: 0 25% 0 0 !important; }
     .owl-gallery .item img {
-      border: 1px solid #dedede;
       width: auto !important; }
 
 .carousel_box .carousel-title {
