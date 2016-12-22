@@ -1003,7 +1003,7 @@ input[type="radio"]:checked + label::before {
 
 .decor-bg {
     padding: 0 0 42px;
-    background: url('../images/decor-back2.jpg') 0 0 no-repeat;
+    background: url('../images/decor-back2.jpg') center center no-repeat;
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
