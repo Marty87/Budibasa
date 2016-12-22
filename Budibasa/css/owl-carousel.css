@@ -259,7 +259,11 @@
     right: 15px;
     background: url("../images/next-gallery.png") 0 0 no-repeat; }
   .owl-gallery .item {
-    max-height: 540px; }
+    max-height: 540px;
+    border: none; }
+    .owl-gallery .item img {
+      border: 1px solid #dedede;
+      width: auto !important; }
 
 .carousel_box .carousel-title {
   color: #928187;
