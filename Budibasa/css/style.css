@@ -2328,7 +2328,8 @@ input[type="text"].search-form_input:-moz-placeholder {
   .owl-carousel-2 .owl-controls {
     width: 100%;
     position: absolute;
-    top: -47px; }
+    top: -47px;
+    left: 0; }
   .owl-carousel-2 .owl-prev {
     width: 17px;
     height: 30px;
